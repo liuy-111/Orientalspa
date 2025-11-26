@@ -102,6 +102,22 @@ body {
         }
         
         /* Hero Section */
+        /* 添加到您的CSS中 */
+.hero a[href^="tel:"] {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: normal !important;
+}
+
+.hero p {
+    color: #ffffff !important;
+}
+
+/* 移除所有电话号码链接的默认样式 */
+a[href^="tel:"] {
+    color: inherit !important;
+    text-decoration: none !important;
+}
         .hero {
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('beijing.jpg') no-repeat center center/cover;
             color: var(--light-text);
@@ -992,6 +1008,7 @@ body {
     </script>
 </body>
 </html>
+
 
 
 
